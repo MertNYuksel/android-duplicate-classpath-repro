@@ -1,0 +1,13 @@
+[versions]
+androidGradlePlugin = "9.0.1"
+androidxCore = "1.15.0"
+androidxActivity = "1.9.3"
+androidxComposeBom = "2026.06.01"
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "androidxActivity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
